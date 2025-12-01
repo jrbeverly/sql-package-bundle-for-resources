@@ -1,0 +1,12 @@
+apiVersion: sqlpackage.v1
+kind: Package
+
+metadata:
+  name: customer-profiles
+  version: 1.1.0
+  description: Customer profile resources
+
+spec:
+  targets:
+    core: example-app
+    database: primary

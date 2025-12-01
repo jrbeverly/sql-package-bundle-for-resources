@@ -1,0 +1,50 @@
+################################################
+# MaNGOS Configuration file
+# World server realm settings.
+#
+# This template is the operator's; the forge
+# realm layer overrides only the five realm-
+# specific keys and preserves everything else.
+################################################
+
+ConfVersion=2023040100
+
+#
+# Realm identification.
+# RealmID must match the realm's realmlist row.
+#
+
+RealmID = 1
+
+# Directories. DataDir points at client data the
+# operator mounts read-only.
+DataDir = "."
+LogsDir = ""
+
+#
+# Database connection information.
+# Format: host;port;user;password;database
+#
+
+LoginDatabaseInfo     = "127.0.0.1;3306;mangos;mangos;realmd"
+WorldDatabaseInfo     = "127.0.0.1;3306;mangos;mangos;mangos"
+CharacterDatabaseInfo = "127.0.0.1;3306;mangos;mangos;characters"
+
+#
+# Network.
+# WorldServerPort is the port clients connect on;
+# it is allocated per realm.
+#
+
+WorldServerPort = 8085
+BindIP = "0.0.0.0"
+MaxPingTime = 30
+
+#
+# Logging.
+#
+
+LogLevel = 3
+LogFile = "Server.log"
+
+# End of template.

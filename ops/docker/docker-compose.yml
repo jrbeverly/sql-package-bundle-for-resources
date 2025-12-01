@@ -1,0 +1,18 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: forge-test-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: forge-root
+      MYSQL_DATABASE: primary
+      MYSQL_USER: forge
+      MYSQL_PASSWORD: forge-test
+    ports:
+      - "127.0.0.1:3306:3306"
+    volumes:
+      - ./init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-u", "forge", "-pforge-test"]
+      interval: 2s
+      timeout: 2s
+      retries: 30

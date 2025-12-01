@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="YamlDotNet" Version="16.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../Forge.Catalog/Forge.Catalog.csproj" />
+    <ProjectReference Include="../Forge.Contracts/Forge.Contracts.csproj" />
+  </ItemGroup>
+</Project>

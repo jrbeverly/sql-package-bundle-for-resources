@@ -1,0 +1,20 @@
+apiVersion: realm.v1
+kind: Realm
+
+metadata:
+  name: searing-gorge
+  displayName: Searing Gorge
+
+spec:
+  core: example-app
+
+  content:
+    packages:
+      - name: customer-profiles
+        version: 1.0.0
+
+  realm:
+    id: 1
+    icon: 1
+    timezone: 0
+    population: 0

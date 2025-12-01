@@ -1,0 +1,12 @@
+apiVersion: sqlpackage.v1
+kind: Package
+
+metadata:
+  name: audit-schema
+  version: 1.0.0
+  description: Audit event sources and event types
+
+spec:
+  targets:
+    core: example-app
+    database: primary

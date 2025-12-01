@@ -1,0 +1,12 @@
+apiVersion: sqlpackage.v1
+kind: Package
+
+metadata:
+  name: reporting-schema
+  version: 1.0.0
+  description: Reporting resources: datasets, reports, and schedules
+
+spec:
+  targets:
+    core: example-app
+    database: primary
